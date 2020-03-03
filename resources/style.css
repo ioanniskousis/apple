@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+
+}
+
+.main {
+  position: relative;
+  background-color: lightgray;
+  height: 830px;
+  width: 100%;
+
+}
+
+.navBar {
+  position: relative;
+  top: 90px;
+  width: 980px;
+  height: 35px;
+  margin: auto;
+  display: flex;
+  border-radius: 4px;
+  border: 1px solid rgb(124, 124, 124);
+
+}
+
+.navBar div {
+  border-left: 1px solid #333;
+}
+
+.navBar :first-child {
+  border: none;
+}
+
+.navButton {
+  background-color: slategray;
+  height: 100%;
+  width: 12%;
+}
+
+.navButton:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.heading1 {
+  position: relative;
+  background-color: rgba(250, 200, 200, 0.8);
+  top: 112px;
+  width: 100%;
+  height: 104px;
+}
+
+.heading2 {
+  position: relative;
+  background-color: rgba(180, 180, 250, 0.3);
+  top: 103px;
+  width: 100%;
+  height: 82px;
+}
+
+.heading3 {
+  position: relative;
+  /* border-top: 1px solid white; */
+  background-color: silver;
+  top: 130px;
+  width: 100%;
+  height: 31px;
+}
+
+.promo {
+  background-color: burlywood;
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  width: 100%;
+  height: 202px;
+  display: flex;
+}
+
+.promoItem {
+  background-color: peachpuff;
+  width: 25%;
+  margin-left: 2px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+}
