@@ -9,45 +9,33 @@ body {
 
 .main {
   position: relative;
-  /* background-color: lightgray; */
   height: 746px;
   width: 100%;
   box-sizing: border-box;
-
-  /* background-image: url("images/body.jpg");
-  background-position: center -776px;
-  background-color: white;
-  background-repeat: no-repeat; */
-
 }
+
 .navBarContainer {
   position: relative;
   margin-top: 84px;
-  /* width: 100%; */
-  height: 35px;
+  height: 36px;
   box-sizing: border-box;
-  /* background-color: rgb(65, 168, 202); */
 }
+
 .navBar {
-  /* position: relative; */
-  /* top: 90px; */
   box-sizing: border-box;
   width: 980px;
-  /* height: 35px; */
   height: 100%;
   margin: auto;
   display: flex;
   border-radius: 4px;
   border: 1px solid rgb(124, 124, 124);
-  background: linear-gradient( rgb(119, 117, 120) 50%, rgb(96, 97, 97) 50%);
-  /* background-color: #555; */
+  background: linear-gradient(rgb(119, 117, 120) 50%, rgb(96, 97, 97) 50%);
   box-shadow: inset 0 0 10px 0 rgba(220, 220, 220, 0.5);
-
 }
 
 .navButton {
+  width: 15%;
   height: 100%;
-  width: 12%;
   cursor: pointer;
   border-left: 1px solid #555;
   color: whitesmoke;
@@ -59,8 +47,8 @@ body {
 }
 
 .navSearch {
+  width: 16%;
   height: 100%;
-  width: 15%;
   cursor: pointer;
   border-left: 1px solid #555;
   color: whitesmoke;
@@ -69,6 +57,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0 15px;
 }
 
 .apple {
@@ -80,81 +69,67 @@ body {
 }
 
 .navButton:hover {
-  background-color: rgb(100, 100, 100);
+  background-color: rgb(78, 78, 78);
 }
 
 .navSearchInput {
-  height: 16px;
-  width: 70%;
-  border-radius: 10px;
+  height: 14px;
+  width: 100%;
+  border-radius: 12px;
   background-color: transparent;
-  /* border: none; */
   border-top: 2px solid #333;
   border-left: 1px solid #555;
   border-bottom: 1px solid #888;
   border-right: 1px solid #333;
-  /* box-shadow: inset 1 -1 2px 2px rgba(105, 51, 51, 0.8); */
   background-image: url("images/search.png");
-  background-position: 5px ;
+  background-position: 5px;
   background-repeat: no-repeat;
   background-size: 12px 12px;
   outline: none;
   padding-left: 24px;
   color: whitesmoke;
-  padding-bottom: 4px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .navSearch:focus-within {
-  width: 25%;
+  width: 26%;
 }
 
 .navSearchInput:focus {
   background-image: url("images/search_focus.png");
   background-color: whitesmoke;
   color: black;
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 0px;
+  border: none;
+  height: 16px;
 }
 
-.heading1 {
-  /* position: relative; */
-  /* background-color: gray; */
-  /* top: 112px; */
-  margin-top: 30px;
+.headings {
   width: 100%;
-  height: 104px;
-  background-image: url("images/heading1.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto auto;
-}
-
-.heading2 {
-  /* position: relative; */
-  /* background-color: rgba(100, 100, 250, 0.3); */
-  margin-top: -10px;
-  margin-bottom: 30px;
-  width: 100%;
-  height: 82px;
-  background-image: url("images/heading2.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto auto;
-}
-
-.heading3 {
-  /* position: relative; */
-  /* border-top: 1px solid white; */
-  /* background-color: silver; */
-  top: 130px;
-  width: 100%;
-  height: 31px;
-  background-image: url("images/heading3.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto auto;
   cursor: pointer;
+}
+
+.heading1 {
+  margin-top: 30px;
+  height: 104px;
+  background-image: url("images/heading1.png");
+}
+
+.heading2 {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  height: 82px;
+  background-image: url("images/heading2.png");
+}
+
+.heading3 {
+  top: 130px;
+  width: 100%;
+  height: 31px;
+  background-image: url("images/heading3.png");
 }
 
 .heading3:hover {
@@ -162,21 +137,17 @@ body {
 }
 
 .promoContainer {
-  background-color: burlywood;
   position: absolute;
   bottom: 90px;
   width: 100%;
-  /* max-width: 1440px; */
   margin: auto;
   height: 202px;
 }
 
 .promo {
-  /* background-color: red; */
   position: relative;
-  /* bottom: 90px; */
   width: 100%;
-  min-width: 1000px;;
+  min-width: 1000px;
   max-width: 1440px;
   margin: auto;
   height: 100%;
@@ -184,21 +155,77 @@ body {
 }
 
 .promoItem {
-  background-color: palegreen;
   width: 25%;
-  margin-left: 2px;
+  margin: 3px 2px 2px 0;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto auto;
 }
 
 .promo :first-child {
   margin-left: 0;
 }
 
+.pr1 {
+  background-image: url("images/promo1.jpg");
+}
+
+.pr2 {
+  background-image: url("images/promo2.jpg");
+}
+
+.pr3 {
+  background-image: url("images/promo3.jpg");
+}
+
+.pr4 {
+  background-image: url("images/promo4.jpg");
+}
+
 footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  background-color: yellow;
+}
+
+.wrapper {
+  width: 1040px;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  justify-items: center;
+  padding: 10px 20px;
+}
+
+.wrapperContent {
+  width: 490px;
+  height: 18px;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+.wrapperContent a {
+  color: rgb(106, 174, 243);
+  margin: 0 3px;
+  text-decoration: none;
+}
+
+.wrapperContent a:hover {
+  text-decoration: underline;
+}
+
+.usa {
+  margin-left: 6px;
+  cursor: pointer;
 }
