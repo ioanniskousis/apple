@@ -2,17 +2,17 @@ body {
   padding: 0;
   margin: 0;
   background-image: url("images/body.jpg");
-  background-position: center -776px;
+  background-position: center -777px;
   background-color: white;
   background-repeat: no-repeat;
 }
 
-main {
-  position: relative;
-  height: 746px;
-  width: 100%;
-  box-sizing: border-box;
+.hidden {
+  display: none;
+  visibility: hidden;
 }
+
+/* HEADER & NAVIGATION */
 
 .navBarContainer {
   position: relative;
@@ -65,6 +65,9 @@ main {
   align-items: center;
   justify-content: center;
   padding: 0 15px;
+  animation-duration: 0.3s;
+  animation-name: navSearch-unfocus;
+  animation-fill-mode: forwards;
 }
 
 .apple {
@@ -99,17 +102,59 @@ main {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* width: 26%; */
+
 .navSearch:focus-within {
-  width: 26%;
+  animation-duration: 0.3s;
+  animation-name: navSearch-focus;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navSearch-unfocus {
+  from {
+    width: 26%;
+  }
+  to {
+    width: 16%;
+  }
+}
+
+@keyframes navSearch-focus {
+  from {
+    width: 16%;
+  }
+  to {
+    width: 26%;
+  }
 }
 
 .navSearchInput:focus {
   background-image: url("images/search_focus.png");
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
+  animation-duration: 1.5s;
+  animation-name: navSearchInput-focus;
+  animation-fill-mode: forwards;
   color: black;
   border: none;
   height: 16px;
 }
+
+@keyframes navSearchInput-focus {
+  from {
+    background-color:transparent;
+  }
+  to {
+    background-color: whitesmoke;
+  }
+}
+
+/* MAIN */
+
+main {
+  position: relative;
+  height: 590px;
+  width: 100%;   
+}  
 
 .headings {
   width: 100%;
@@ -149,11 +194,9 @@ main {
 }
 
 .promoContainer {
-  position: absolute;
-  bottom: 90px;
   width: 100%;
   margin: auto;
-  height: 202px;
+  margin-top: 150px;
 }
 
 .promo {
@@ -162,16 +205,20 @@ main {
   min-width: 1000px;
   max-width: 1440px;
   margin: auto;
-  height: 100%;
   display: flex;
 }
 
 .promoItem {
   width: 25%;
+  height: 200px;
   margin: 3px 2px 2px 0;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto auto;
+}
+
+.promo:last-child {
+  margin: 3px 0px 2px 0;
 }
 
 .promoItem a {
@@ -200,42 +247,50 @@ main {
   background-image: url("images/promo4.jpg");
 }
 
+/* FOOTER */
+
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   height: 90px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 0;
 }
 
 .wrapper {
-  width: 1040px;
-  height: 70px;
+  width: 1000px;
+  height: 50px;
+  min-width: 1000px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   align-content: space-around;
-  justify-items: center;
-  padding: 10px 20px;
+  justify-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .wrapperContent {
-  width: 490px;
+  width: 500px;
   height: 18px;
   font-size: 11px;
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
-  margin: 0 10px;
+  margin: 0 0px;
   display: flex;
   align-items: center;
   float: left;
+
 }
 
 .wrapperContent a {
   color: rgb(106, 174, 243);
   margin: 0 3px;
   text-decoration: none;
+  display: inline-block;
 }
 
 .wrapperContent a:hover {
