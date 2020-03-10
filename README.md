@@ -14,7 +14,7 @@ The purpose of this project is to clone the appearance of an old version of Appl
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/ioanniskousis/apple/3e0d2310ba455bf79e9836edb3446c2c6bc9be67/index.html)
+[Live Demo Link](https://rawcdn.githack.com/ioanniskousis/apple/6695714575ecea5f463f8ebd05b16f9ad405a0ba/index.html)
 
 ## Getting Started
 
