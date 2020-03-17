@@ -9,7 +9,7 @@ The purpose of this project is to clone the appearance of an old version of Appl
 
 ## Built With
 
-- HTML,
+- HTML
 - CSS
 
 ## Live Demo
